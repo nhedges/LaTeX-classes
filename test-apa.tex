@@ -1,5 +1,6 @@
 \documentclass{apa-article}
 \usepackage{lipsum}
+\usepackage{apacite}
 \title{My Title}
 \author{Nicholas Hedges}
 \institution{Utah State University}
@@ -12,6 +13,9 @@
 \section{First of all}
 \lipsum
 \subsection{Missiles}
+Not much to say here \cite{BobsBook01}
 \subsection{Lasers}
 \section{Software}
+\bibliographystyle{apacite}
+\bibliography{test-apa.bib}
 \end{document}
