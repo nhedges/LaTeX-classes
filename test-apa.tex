@@ -1,6 +1,12 @@
 \documentclass{apa-article}
 \usepackage{lipsum}
-\usepackage{apacite}
+\usepackage
+[backend=biber,
+style=apa,
+citestyle=apa,
+natbib
+]{biblatex}
+\addbibresource{test-apa.bib}
 \title{My Title}
 \author{Nicholas Hedges}
 \institution{Utah State University}
@@ -13,9 +19,9 @@
 \section{First of all}
 \lipsum
 \subsection{Missiles}
-Not much to say here \cite{BobsBook01}
+Not much to say here.
+\citep{BobsBook01}
 \subsection{Lasers}
 \section{Software}
-\bibliographystyle{apacite}
-\bibliography{test-apa.bib}
+\printbibliography
 \end{document}
