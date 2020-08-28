@@ -4,4 +4,6 @@
 *.bbl
 *.blg
 *.dvi
+*.xml
+*.bcf
 .*
